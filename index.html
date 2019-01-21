@@ -28,7 +28,7 @@
             },
             methods: {
                 search: function () {
-                    fetch(`http://www.omdbapi.com/?apikey=API_KEY&t=${this.query}&y=&plot=short&r=json`)
+                    fetch(`https://www.omdbapi.com/?apikey=3f7132a2&t=${this.query}&y=&plot=short&r=json`)
                         .then(result => result.json())
                         .then(result => {
                             this.$set(this, 'result', result)
